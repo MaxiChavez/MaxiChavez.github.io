@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../recursos/fondoNueve.avif);
+  background-size: cover;
+}
+
+#container2 {
+  padding-top: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 32em;
+  height: 26em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  margin-top: 1px;
+}
+.containerLogo {
+  margin-top: -10px;
+  padding: 0%;
+  margin-bottom: 0;
+}
+#pcolor {
+  margin-bottom: -10px;
+  padding-top: 0%;
+}
+img#LogoParametros {
+  width: 10em;
+  height: 10em;
+  margin-top: 0.5em;
+  padding-bottom: 0;
+  margin: 0%;
+  padding: 0%;
+}
+
+.row {
+  margin-left: 2em;
+  margin-right: 2em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.btn-primary {
+  margin-top: 3em;
+}
+
+#botonInstrucciones {
+  margin-top: 0.5em;
+}
+#botonJugar {
+  margin-top: 0.5em;
+}
+#elementosParametros {
+  margin-top: 0px;
+  padding: 2px;
+  align-self: flex-start;
+}

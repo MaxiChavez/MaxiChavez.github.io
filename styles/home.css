@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../recursos/fondoNueve.avif);
+  background-size: cover;
+}
+
+/* .background-image {
+    filter: blur(0.1rem);
+    } */
+
+#containerLogin {
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 32em;
+  height: 26em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+}
