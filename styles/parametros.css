@@ -16,7 +16,7 @@ body {
   justify-content: center;
   text-align: center;
   width: 32em;
-  height: 26em;
+  height: 28em;
   border-style: solid;
   border-color: black;
   border-radius: 15px;
@@ -30,6 +30,17 @@ h1 {
   margin-top: -10px;
   padding: 0%;
   margin-bottom: 0;
+}
+#containerPick {
+  margin: 0;
+  padding: 0;
+  margin-left: 3em;
+}
+.input-color {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 #pcolor {
   margin-bottom: -10px;
@@ -65,4 +76,23 @@ img#LogoParametros {
   margin-top: 0px;
   padding: 2px;
   align-self: flex-start;
+}
+
+.row > * {
+  /* flex-shrink: 0; */
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: var(--bs-gutter-y);
+}
+
+#elementosParametros {
+  margin-top: 2px;
+  padding: 10px;
+  align-items: center;
+}
+
+#elementosParametros .row > * {
+  margin-bottom: 5px;
 }
