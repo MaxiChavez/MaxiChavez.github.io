@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -32,15 +32,15 @@ body {
   -webkit-transition-duration: 0.7s;
   -webkit-transition-property: -webkit-box-shadow;
   animation-iteration-count: infinite; /* nombre de boucles (infinie) */
-  animation-timing-function: linear; /* accelération de l'animation (constant) */
-}
+/* animation-timing-function: linear; /* accelération de l'animation (constant) */
 
+/* 
 #background:hover {
   -webkit-box-shadow: inset 0px 0px 500px 70px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0px 0px 500px 70px rgba(0, 0, 0, 0.8);
 
   -webkit-transition-duration: 5s;
   -webkit-transition-property: -webkit-box-shadow;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+  animation-iteration-count: infinite; /* nombre de boucles (infinie) */
+/* animation-timing-function: linear; /* accelération de l'animation (constant) */
+/* } */
