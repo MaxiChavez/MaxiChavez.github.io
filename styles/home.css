@@ -10,10 +10,6 @@ body {
   background-size: cover;
 }
 
-/* .background-image {
-    filter: blur(0.1rem);
-    } */
-
 #containerLogin {
   padding: 1em;
   align-items: center;
