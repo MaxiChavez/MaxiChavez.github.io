@@ -52,11 +52,11 @@ Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
 ## Vistas
 
 Landing
-<img src="../recursos/vistaHome.png">
+<img src="./recursos/vistaHome.png">
 
 Parametros
-<img src="./recursos/vistaParametros.png
-">
+<img src="./recursos/vistaParametros.png">
+
 Instrucciones
 
 <img src="./recursos/instrucciones.png">
