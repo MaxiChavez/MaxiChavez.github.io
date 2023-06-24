@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
   };
   sessionStorage.setItem("sesion", JSON.stringify(nombreDificultad));
   //Cargo nombre y dificultad del sesion Storage////////
-  window.location.href = "./pages/parametros.html";
+  window.location.href = "../pages/parametros.html";
 });
 
 const developer = "MaxiChavez|||MaxiGamble => GitHub";
