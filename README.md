@@ -52,7 +52,7 @@ Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
 ## Vistas
 
 Landing
-<img src="../Mastermind/recursos/vistaGame.png">
+<img src="../Mastermind/recursos/vistaHome.png">
 
 Parametros
 <img src="./recursos/vistaParametros.png
@@ -75,14 +75,15 @@ Responsive
 
 ## Licencia
 
-Este proyecto se encuentra bajo licencia de "Maxi Chavez"
+Este proyecto se encuentra bajo licencia de "MaxiGamble"
 
 ## Webgrafia:
 
 Para conseguir mi objetivo he recopilado información de:
 
-- link a repositorios
-- link a documentacion de librerias externas
+- link a repositorios.
+- link a documentacion de librerias externas.
+- Documentacion oficial.
 - ...
 
 ## Desarrollo:
@@ -97,12 +98,13 @@ console.log("Desarrollado por: " + datata);
 
 Agradezco a mis compañeros y docentes el tiempo dedicado a este proyecto:
 
-- **_Maxi_**
-  <a href="https://github.com/Maxigamble" target="_blank"><img src="https://img.shields.io/badge/github-24292F?style=for-the-badge&logo=github&logoColor=green" target="_blank"></a>
+<!-- - **_Maxi_**   -->
+
+<a href="https://github.com/Maxigamble" target="_blank"><img src="https://img.shields.io/badge/github-24292F?style=for-the-badge&logo=github&logoColor=green" target="_blank"></a>
 
 ## Contacto
 
 <a href = "mailto:chavezmaxi@gmail.com"><img src="https://img.shields.io/badge/Gmail-C6362C?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/linkedinUser/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/maximiliano-chavez-b12877107" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 </p>

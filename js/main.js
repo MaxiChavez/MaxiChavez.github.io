@@ -24,3 +24,6 @@ form.addEventListener("submit", (event) => {
 //     var e = document.getElementById("ddlViewBy");
 // var value = e.value;
 // var text = e.options[e.selectedIndex].text;
+const developer = "MaxiChavez|||MaxiGamble => GitHub";
+
+console.log("Desarrollado por: " + developer);
