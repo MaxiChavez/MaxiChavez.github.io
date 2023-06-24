@@ -4,6 +4,8 @@ let dificultad = datosJuego.dificultad;
 let colores = datosJuego.colores;
 let nombreJugador = datosJuego.nombre;
 
+//traigo datos del sesion storage/////
+
 let cantidadIntentos;
 
 switch (dificultad) {

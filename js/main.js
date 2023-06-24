@@ -14,16 +14,10 @@ form.addEventListener("submit", (event) => {
     dificultad: text,
   };
   sessionStorage.setItem("sesion", JSON.stringify(nombreDificultad));
-
+  //Cargo nombre y dificultad del sesion Storage////////
   window.location.href = "../Mastermind/pages/parametros.html";
 });
 
-// var selectedOption = this.options[select.selectedIndex];
-//     console.log(selectedOption.value + ': ' + selectedOption.text)
-
-//     var e = document.getElementById("ddlViewBy");
-// var value = e.value;
-// var text = e.options[e.selectedIndex].text;
 const developer = "MaxiChavez|||MaxiGamble => GitHub";
 
 console.log("Desarrollado por: " + developer);
