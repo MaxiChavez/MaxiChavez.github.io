@@ -29,14 +29,17 @@ Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
 ## Deploy 🚀
 
 <div align="center">
-    <a href="https://www.google.com"><strong>Url a producción </strong></a>🚀🚀🚀
+    <a href="https://github.com/Maxigamble/Maxigamble.github.io"><strong>Url a producción </strong></a>🚀🚀🚀
 </div>
 
 ## Stack
 
-<a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-    <img src= "https://img.shields.io/badge/javascipt-EFD81D?style=for-the-badge&logo=javascript&logoColor=black"/>
-</a>
+![Html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
  </div>
 
 ## Instalación en local
@@ -49,14 +52,18 @@ Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
 ## Vistas
 
 Landing
-<img src="../Mastermind/recursos/vistaHome.png">
+<img src="../Mastermind/recursos/vistaGame.png">
+
 Parametros
 <img src="./recursos/vistaParametros.png
 ">
 Instrucciones
+
 <img src="./recursos/instrucciones.png">
+
 Vista Game
 <img src="./recursos/vistaGame.png">
+
 Responsive
 <img src="./recursos/responsiveUno.png">
 
