@@ -30,7 +30,7 @@ Esta primera entrega consta de las vistas, estilos, guardado de informacion rele
 ## Deploy 🚀
 
 <div align="center">
-    <a href="https://github.com/Maxigamble/Maxigamble.github.io"><strong>Url a producción </strong></a>🚀🚀🚀
+    <a href="https://Maxigamble.github.io"><strong>Url a producción </strong></a>🚀🚀🚀
 </div>
 
 ## Stack
