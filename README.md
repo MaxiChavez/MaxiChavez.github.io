@@ -25,6 +25,7 @@ Realizacion del juego Mastermind, con Html5,Css3 y Javascript.
 ## Sobre el proyecto 🔎
 
 Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
+Esta primera entrega consta de las vistas, estilos, guardado de informacion relevante en el Sesion Storage(nombre, dificultad y los colores con los que va a jugar [Array de colores] )
 
 ## Deploy 🚀
 
