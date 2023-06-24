@@ -1,6 +1,6 @@
 # Bienvenidos a mi Mastermind.
 
-<!-- <details>
+<details>
   <summary>Contenido 📝</summary>
   <ol>
     <li><a href="#objetivo-🎯">Objetivo</a></li>
@@ -98,4 +98,4 @@ Agradezco a mis compañeros y docentes el tiempo dedicado a este proyecto:
 <a href = "mailto:chavezmaxi@gmail.com"><img src="https://img.shields.io/badge/Gmail-C6362C?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/linkedinUser/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
-</p> -->
+</p>
