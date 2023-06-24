@@ -30,3 +30,10 @@ switch (dificultad) {
     generarPickers(6);
     break;
 }
+
+const jugar = () => {
+  let dataSesion = JSON.parse(sessionStorage.getItem("sesion"));
+  dataSesion.colores = arrayColores;
+  sessionStorage.setItem("sesion", JSON.stringify(dataSesion));
+  window.location.href = "../pages/mastermind.html";
+};

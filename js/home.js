@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
   };
   sessionStorage.setItem("sesion", JSON.stringify(nombreDificultad));
 
-  window.location.href = "../pages/parametros.html";
+  window.location.href = "../Mastermind/pages/parametros.html";
 });
 
 // var selectedOption = this.options[select.selectedIndex];

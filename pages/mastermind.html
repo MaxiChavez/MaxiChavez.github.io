@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mastermind Juego</title>
     <link
@@ -11,60 +13,46 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/mastermind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="carta">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 class="text-center">Mastermind</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2">
-                <div class="row">
-                  <div class="col-md-3"></div>
-                  <div id="bolaUno" class="col-md-6">d</div>
-                  <div class="col-md-3"></div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="row">
-                  <div class="col-md-3"></div>
-                  <div id="bolaDos" class="col-md-6">d</div>
-                  <div class="col-md-3"></div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="row">
-                  <div class="col-md-3"></div>
-                  <div id="bolaTres" class="col-md-6">d</div>
-                  <div class="col-md-3"></div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="row">
-                  <div class="col-md-3"></div>
-                  <div id="bolaCuatro" class="col-md-6">d</div>
-                  <div class="col-md-3"></div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="row">
-                  <div id="marcadorUno" class="col-md-3">1</div>
-                  <div id="marcadorDos" class="col-md-3">2</div>
-                  <div id="marcadorTres" class="col-md-3">3</div>
-                  <div id="marcadorCuatro" class="col-md-3">4</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3"></div>
+    <h1 id="tituloGame">Mastermind</h1>
+    <img id="logoJuego" src="../recursos/LogoAjustado.png" alt="logo" />
+
+    <section id="carta">
+      <div id="container" class="container">
+        <div id="containerBolas" class="containerBolas">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
         </div>
+        <div id="containerComprobador" class="containerComprobador">
+          <div class="row">
+            <div class="comprobador"></div>
+            <div class="comprobador"></div>
+          </div>
+          <div class="row">
+            <div class="comprobador"></div>
+            <div class="comprobador"></div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button id="btn" type="submit" class="btn btn-primary">✓</button>
+        </div>
+        <!-- <button class="btn">✓</button> -->
       </div>
+    </section>
+
+    <div class="col-auto">
+      <button id="btnJuego" type="submit" class="btn btn-primary">
+        Nuevo juego
+      </button>
     </div>
 
     <script
@@ -72,6 +60,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/mastermind.js"></script>
   </body>
 </html>
+-->
