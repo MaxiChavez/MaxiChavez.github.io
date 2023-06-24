@@ -52,7 +52,7 @@ Es un proyecto realizado para el Bootcamp Frontend Developers de GeekHubs.
 ## Vistas
 
 Landing
-<img src="../Mastermind/recursos/vistaHome.png">
+<img src="../recursos/vistaHome.png">
 
 Parametros
 <img src="./recursos/vistaParametros.png
