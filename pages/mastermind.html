@@ -23,39 +23,12 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <h1 id="tituloGame">Mastermind</h1>
     <img id="logoJuego" src="../recursos/LogoAjustado.png" alt="logo" />
 
-    <article id="carta">
-      <div id="container" class="container">
-        <div id="containerBolas" class="containerBolas">
-          <div
-            id="bolaUno"
-            data-color="-1"
-            onclick="switchColor(this)"
-            class="ball"
-          ></div>
-          <div data-color="-1" onclick="switchColor(this)" class="ball"></div>
-          <div data-color="-1" onclick="switchColor(this)" class="ball"></div>
-          <div data-color="-1" onclick="switchColor(this)" class="ball"></div>
-        </div>
-        <div id="containerComprobador" class="containerComprobador">
-          <div class="row">
-            <div class="comprobador"></div>
-            <div class="comprobador"></div>
-          </div>
-          <div class="row">
-            <div class="comprobador"></div>
-            <div class="comprobador"></div>
-          </div>
-        </div>
-        <div class="col-auto">
-          <button id="btn" type="submit" class="btn btn-primary">✓</button>
-        </div>
-        <!-- <button class="btn">✓</button> -->
-      </div>
-    </article>
+    <section id="section-bolas"></section>
 
     <div class="col-auto">
       <button id="btnJuego" type="submit" class="btn btn-primary">

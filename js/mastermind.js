@@ -3,25 +3,43 @@ let datosJuego = JSON.parse(sessionStorage.sesion);
 let dificultad = datosJuego.dificultad;
 let colores = datosJuego.colores;
 let nombreJugador = datosJuego.nombre;
-
-//traigo datos del sesion storage/////
-
+let numeroBoton = 0;
 let cantidadIntentos;
+let intentosRealizados = 0;
+let rootSection = document.getElementById("section-bolas");
 
-switch (dificultad) {
-  case "Dificil":
-    cantidadIntentos = 6;
-
-    break;
-
-  case "Intermedio":
-    cantidadIntentos = 8;
-    break;
-
-  default:
-    cantidadIntentos = 10;
-    break;
-}
+const crearArticuloBoton = (id) => {
+  return `<article id="carta">
+  <div id="container" class="container">
+    <div id="containerBolas" class="containerBolas">
+      <div id = "${id}" data-color="-1" onclick="switchColor(this)" class="ball"></div>
+      <div id = "${
+        id + 1
+      }" data-color="-1" onclick="switchColor(this)" class="ball"></div>
+      <div id = "${
+        id + 2
+      }" data-color="-1" onclick="switchColor(this)" class="ball"></div>
+      <div id = "${
+        id + 3
+      }" data-color="-1" onclick="switchColor(this)" class="ball"></div>
+    </div>
+    <div id="containerComprobador" class="containerComprobador">
+      <div class="row">
+        <div class="comprobador"></div>
+        <div class="comprobador"></div>
+      </div>
+      <div class="row">
+        <div class="comprobador"></div>
+        <div class="comprobador"></div>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button id="btn" type="submit" class="botonCheckIntento btn btn-primary" onclick="checkIntento()">✓</button>
+    </div>
+    <!-- <button class="btn">✓</button> -->
+  </div>
+  </article>`;
+};
 
 const crearSolucion = (vectorColores) => {
   let solucionJuego = [];
@@ -33,40 +51,53 @@ const crearSolucion = (vectorColores) => {
   }
   return solucionJuego;
 };
-console.log(crearSolucion(colores));
 
-// 1. Seleccionar un color aleatorio del array de colores.
-// 2. Introducir el color random seleccionado en un array de solucion.
-// 3. Repetir los dos pasos anteriores 4 veces
-
-//Generar codigo aleatorio segun la dificultad
-
-// Cargar en el dom el containerBolas, cuando cargue
-//la pantalla
-
-// que con cada click valla alternando los colores en el pick
-//para que el usuario elija el array con el que va a jugar.
+//traigo datos del sesion storage/////
+const InicioPagina = () => {
+  rootSection.innerHTML += crearArticuloBoton(numeroBoton);
+  numeroBoton += 4;
+  switch (dificultad) {
+    case "Dificil":
+      cantidadIntentos = 6;
+      break;
+    case "Intermedio":
+      cantidadIntentos = 8;
+      break;
+    default:
+      cantidadIntentos = 10;
+      break;
+  }
+  crearSolucion(colores);
+};
 
 const switchColor = (boton) => {
-  if (boton.dataset.color === "default") {
+  if (boton.dataset.color < colores.length) {
     document.getElementById(boton.id).style.backgroundColor =
       colores[Number(boton.dataset.color) + 1];
-    boton.dataset.color = boton.dataset.color + 1;
+    console.log(boton.dataset.color);
+    boton.dataset.color = Number(boton.dataset.color) + 1;
+  } else {
+    document.getElementById(boton.id).style.backgroundColor = colores[0];
+    boton.dataset.color = 0;
   }
+
   console.log(boton.dataset.color);
 };
 
-// function mandarId(id){
-//   alert(id);
-//  }
-// <button id="boton" onclick="mandarId(this.id)">click aquí </button>
+const checkIntento = () => {
+  //Primero chequeo el intento y realizo lo que hay con los colores
 
-//cuando le da al boton ok, que pase al pick siguiente
+  //Si el intento es fallido, incremento la cantidad de intentos,
+  //deshabilito los botones y agrego otro nuevo article
+  let botones = document.getElementsByClassName("botonCheckIntento");
+  intentosRealizados++;
+  if (intentosRealizados < cantidadIntentos) {
+    Array.from(botones).forEach((boton) => {
+      boton.disabled = true;
+    });
+    rootSection.innerHTML += crearArticuloBoton(numeroBoton);
+    numeroBoton += 4;
+  }
+};
 
-// comrpobar ultimo pick chequea si co
-
-//cuando completa el ultimo array que compruebe una vez si
-// hay colores elegidos y por otro lado
-// por otro lado que compruebe ubicacion
-//que compruebe cantidadad de intentos y constate si el codigo
-//elegido es elc correcto lanze un modal con felicitaciones
+InicioPagina();
