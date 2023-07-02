@@ -214,7 +214,7 @@ const elJugadorGano = (respuesta) => {
 };
 const NuevoJuego = () => {
   window.sessionStorage.setItem("sesion", "");
-  window.location.href = "../../";
+  window.location.href = "../index.html";
 };
 
 InicioPagina();

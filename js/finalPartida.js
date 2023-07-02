@@ -33,7 +33,7 @@ const RenderizarResultado = () => {
 
 const NuevoJuego = () => {
   window.sessionStorage.setItem("sesion", "");
-  window.location.href = "../../";
+  window.location.href = "../index.html";
 };
 
 RenderizarResultado();
