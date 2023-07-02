@@ -1,14 +1,23 @@
+//traigo y declaro las variables
+
 let datosJuego = JSON.parse(sessionStorage.sesion);
 
 let dificultad = datosJuego.dificultad;
+//colores son los colores seleccionas por usuario
 let colores = datosJuego.colores;
+console.log("linea8y 9 imprime colores");
+console.log(colores);
+
 let nombreJugador = datosJuego.nombre;
+//codigo colores ganador
 let coloresSolucion = [];
+//
 let numeroBoton = 0;
 let cantidadIntentos;
 let intentosRealizados = 0;
 let rootSection = document.getElementById("section-bolas");
 
+// El articulo con los bolas lo meto dentro de la funcion
 const crearArticuloBoton = (id) => {
   return `<article class= "carta">
   <div id="container" class="container">
@@ -35,13 +44,14 @@ const crearArticuloBoton = (id) => {
       </div>
     </div>
     <div class="col-auto">
-      <button id="btn" type="submit" class="botonCheckIntento btn btn-primary" onclick="checkIntento()">✓</button>
+      <button id="btn" type="submit" class="botonCheckIntento btn btn-primary" onclick="checkIntento() checkColores() ">✓</button>
     </div>
     <!-- <button class="btn">✓</button> -->
   </div>
   </article>`;
 };
 
+//funcion  donde se declara el codigo random
 const crearSolucion = (vectorColores) => {
   let solucionJuego = [];
   let randomColor;
@@ -49,6 +59,8 @@ const crearSolucion = (vectorColores) => {
     randomColor =
       vectorColores[Math.floor(vectorColores.length * Math.random())];
     solucionJuego.push(randomColor);
+    console.log("linea62y63 imprime soluciondel juego");
+    console.log(solucionJuego);
   }
   return solucionJuego;
 };
@@ -68,8 +80,12 @@ const InicioPagina = () => {
       cantidadIntentos = 10;
       break;
   }
+  //prueba o borrar o descomentar//
   coloresSolucion = crearSolucion(colores);
+  // console.log(`linea 80 ${coloresSolucion}`);
 };
+// igualo el array vacio coloresSolucion a la funcion, para que sea Random
+// cuando cargue la pagina
 
 const switchColor = (boton) => {
   if (boton.dataset.color < colores.length) {
@@ -81,12 +97,12 @@ const switchColor = (boton) => {
     document.getElementById(boton.id).style.backgroundColor = colores[0];
     boton.dataset.color = 0;
   }
-
+  console.log("linea100y102");
   console.log(boton.dataset.color);
 };
 
 const checkIntento = () => {
-  //Primero chequeo el intento y realizo lo que hay con los colores
+  //Primero chequeo el intento y reviso lo que hay con los colores
   let lastBall1 = document.getElementById(`ball${numeroBoton - 4}`).dataset
     .color;
   let lastBall2 = document.getElementById(`ball${numeroBoton - 3}`).dataset
@@ -95,11 +111,11 @@ const checkIntento = () => {
     .color;
   let lastBall4 = document.getElementById(`ball${numeroBoton - 1}`).dataset
     .color;
-  CheckColores(lastBall1, lastBall2, lastBall3, lastBall4);
   //Si el intento es fallido, incremento la cantidad de intentos,
   //deshabilito los botones y agrego otro nuevo article
   let botones = document.getElementsByClassName("botonCheckIntento");
   intentosRealizados++;
+
   if (intentosRealizados < cantidadIntentos) {
     Array.from(botones).forEach((boton) => {
       boton.disabled = true;
@@ -107,11 +123,50 @@ const checkIntento = () => {
     rootSection.innerHTML += crearArticuloBoton(numeroBoton);
     numeroBoton += 4;
   }
+  // lastBall1, lastBall2, lastBall3, lastBall4
 };
-const CheckColores = (color1, color2, color3, color4) => {
-  console.log(coloresSolucion.indexOf(colores[color1]));
-  console.log(coloresSolucion.indexOf(colores[color2]));
-  console.log(coloresSolucion.indexOf(colores[color3]));
-  console.log(coloresSolucion.indexOf(colores[color4]));
+
+const checkColores = () => {
+  const intento = [lastBall1, lastBall2, lastBall3, lastBall4];
+
+  for (let i = 0; i < 4; i++) {
+    if (intento[i] === coloresSolucion[i]) {
+      console.log("igual");
+    } else console.log("diferente");
+  }
 };
+
 InicioPagina();
+
+// const CheckColores = (color1, color2, color3, color4) => {
+//   cons
+//   console.log(coloresSolucion.indexOf(colores[color1]));
+//   console.log(coloresSolucion.indexOf(colores[color2]));
+//   console.log(coloresSolucion.indexOf(colores[color3]));
+//   console.log(coloresSolucion.indexOf(colores[color4]));
+// };
+
+// const CheckColores = (color1, color2, color3, color4) => {
+//   let resultado = [];
+//   const solucion = coloresSolucion.map((color) => color);
+//   for (let i = 0; i < 4; i++) {
+//     color[i] === solucion[i];
+//     resultado.push(color1);
+//   }
+//   console.log(resultado);
+// };
+// const checkColores = (lastBall1, lastBall2, lastBall3, lastBall4) => {
+//   const intento = [lastBall1, lastBall2, lastBall3, lastBall4];
+
+//   const resultado = coloresSolucion.map((color, index) => {
+//     if (color === colores[intento[index]]) {
+//       return "Acierto";
+//     } else if (coloresSolucion.includes(colores[intento[index]])) {
+//       return "Coincidencia";
+//     } else {
+//       return "Incorrecto";
+//     }
+//   });
+
+//   console.log(resultado);
+// };

@@ -111,3 +111,18 @@ div.row {
 .carta {
   margin-bottom: 15px;
 }
+
+#logoDivFijo {
+  height: 6em;
+  width: 6em;
+}
+#LogoDivFijo {
+  height: 6em;
+  width: 6em;
+}
+
+h2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

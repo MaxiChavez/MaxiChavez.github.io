@@ -27,7 +27,55 @@
   <body>
     <h1 id="tituloGame">Mastermind</h1>
     <img id="logoJuego" src="../recursos/LogoAjustado.png" alt="logo" />
+    <section id="section-bolasSolucion">
+      <article class="carta">
+        <div id="container" class="container">
+          <div id="containerBolas" class="containerBolas">
+            <div
+              id="ball${id}"
+              data-color="-1"
+              onclick="switchColor(this)"
+              class="ball"
+            ></div>
+            <div
+              id="ball${
+            id + 1
+          }"
+              data-color="-1"
+              onclick="switchColor(this)"
+              class="ball"
+            ></div>
+            <div
+              id="ball${
+            id + 2
+          }"
+              data-color="-1"
+              onclick="switchColor(this)"
+              class="ball"
+            ></div>
+            <div
+              id="ball${
+            id + 3
+          }"
+              data-color="-1"
+              onclick="switchColor(this)"
+              class="ball"
+            ></div>
+          </div>
+          <!-- <div id="divLogoFijo">
+            <img
+              id="LogoDivFijo"
+              src="../recursos/LogoAjustado.png"
+              alt="logo"
+            />
+           
 
+          <!-- <button class="btn">✓</button> -->
+        </div>
+      </article>
+    </section>
+
+    <!-- ////////carta por DOM////////// -->
     <section id="section-bolas"></section>
 
     <div class="col-auto">
