@@ -51,3 +51,19 @@ h4 {
 .container {
   padding: 11px;
 }
+
+#container.container {
+  display: flex;
+  padding: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerBolas {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-right: 0em !important;
+  align-items: center;
+  padding: 1em;
+}
