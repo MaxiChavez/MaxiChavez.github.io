@@ -92,6 +92,7 @@ div.row {
   align-items: center;
   margin-top: 2em;
   width: 10em;
+  margin-bottom: 1em;
 }
 
 .col-auto {
